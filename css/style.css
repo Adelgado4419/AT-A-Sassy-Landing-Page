@@ -16,13 +16,13 @@
 }
 
 .btn-primary {
-  background-color: #001c47;
+  background-color: #0c7190;
   color: white;
 }
 
 .btn-secondary {
-  background-color: #a2d0fc;
-  color: black;
+  background-color: #341C1C;
+  color: white;
 }
 
 .box {
@@ -39,7 +39,7 @@
 }
 
 body {
-  background-color: #FFC300;
+  background-color: #38A3A5;
   font-family: Trebuchet MS, Arial, sans-serif;
   line-height: 1;
 }
@@ -52,13 +52,41 @@ a {
   text-decoration: none;
 }
 
+.hero {
+  background-color: #084C61;
+  color: white;
+  height: 600px;
+}
 .hero nav {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: space-between;
 }
 .hero nav ul {
   display: flex;
+}
+.hero nav li {
+  padding: 15px;
+}
+.hero nav a {
+  color: white;
+}
+.hero nav a:hover {
+  color: #341C1C;
+}
+.hero-content {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+.hero-content img {
+  width: 50%;
+}
+.hero-content h1 {
+  font-size: 50px;
+  line-height: 1.2;
 }
 
 .m-1 {

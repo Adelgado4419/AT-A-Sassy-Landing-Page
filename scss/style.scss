@@ -24,13 +24,43 @@ a {
 }
 
 .hero {
+  @include set-bg($primary-color);
+  height: 600px;
+
   nav{
-    display:flex;
+    display:inline-flex;
     align-items:center;
     justify-content: space-between;
 
     ul{
       display: flex;
+    }
+    li {
+      padding: 15px
+    }
+    a{
+      color: text-color-picker($primary-color)
+      // this is linking to the utilites.scss files, it seems that if the lightness of the color is less than 70, it will return the dark color, otherwise, it will retun white. 
+    }
+    a:hover{
+      color: $secondary-color;
+    }}
+    &-content {
+      // the content is refering to the class"hero-content" within the html file. the & refers to the hero tag on line 26. 
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 30px;
+  
+      img {
+        width: 50%;
+      }
+  
+      h1 {
+        font-size: 50px;
+        line-height: 1.2;
+      }
     }
   }
   // This is where the bulk of the SCSS styling needs to be done
@@ -41,7 +71,7 @@ a {
   // 1. $variables
   // 2. nesting (dont forget about the ampersand (&) parent selector!)
   // 3. At-Rules
-}
+
 
 // This code is related to some of the aspects of SCSS we have yet to cover.
 // While you don't have to mess with it, it would be advisable to attempt to understand its functionality.
